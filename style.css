@@ -84,7 +84,8 @@ select {
 }
 
 
-header::before {
+header::before,
+.materials-menu::before {
     display: block;
     content: '';
     height: 60px;
@@ -99,7 +100,7 @@ header::before {
 }
 
 .nav-color-mobile {
-    background: var(--clr-pop-blue);
+    background: var(--clr-pop-red);
     color: #f5f5f5;   
 }
 
@@ -201,9 +202,91 @@ header::before {
   height: 170px;
   width: 200px;
 }
+
+/* ABOUT SECTION */
+
+.about{
+  font-family:'Roboto', sans-serif;
+  color: var(--clr-pop-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-card {
+  background: var(--clr-pop-yellow);
+  padding: 1em 1.5em;
+  border-radius: 10px; 
+ 
+  /* min-height: 350px;  */
+}
+
+.card-pink {
+  background: var(--clr-pop-red);
+  color: #f7ebde;
+}
+
+.card-yellow {
+  background: var(--clr-pop-yellow);
+  
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.about-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Lesson types section */
+
+.lesson-types {
+  background: var(--clr-pop-red);
+  margin: 0;
+  padding-top: 1em;
+}
+
+.lesson-title {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: #f5f5f5;
+}
+
+.lesson-type-title {
+  text-align: center;
+  
+}
+
+.lesson-type-header,
+.lesson-type-content {
+  margin: 1em 0 1em 0;
+}
+
+.conversation {
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.class-image {
+  display: none;
+  border-radius: 10px;
+  width: 200px;
+  
+}
+
+
 /* Menu Section */
 
-.menu {
+.menu,
+.materials-menu {
   background: #121212;
   background-image: url('./img/backdrop.jpg');
   background-blend-mode: overlay;
@@ -212,14 +295,15 @@ header::before {
 }
 
 .menu-title {
-  margin: 1em auto;
+  margin: 1em auto 0.5em;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   color: var(--clr-pop-red);
   
 }
 
-.menu-title h1 {
+.menu-title h1,
+.lesson-title h1 {
   font-size: 2.5rem;
 }
 
@@ -241,8 +325,7 @@ header::before {
   align-items: center;
   padding: 0 1em;
   border-radius: 10px;
-  
-  
+
 }
 
 .card-info img {
@@ -266,7 +349,7 @@ header::before {
   }
 
   .nav-color {
-    background: #f7ebde;
+    background: #f9f1e9;
     color: #08104f;
   }
 
@@ -306,9 +389,10 @@ header::before {
 }
 
 
-  .menu-title h1 {
+  .menu-title h1,
+  .lesson-title h1 {
     font-size: 4.5em;
-    margin: 0.5em;
+    /* margin: 0.5em; */
   }
 
   .menu-cards {
@@ -344,8 +428,30 @@ header::before {
     margin: 0 auto 1em auto;
     border-radius: 2px;
     }
-  
 
+    .about-card {
+      min-height: 350px; 
+      padding: 1.5em 2em;
+      flex-direction: column;
+    }
+
+    .about-card p {
+      font-size: 1.3rem;
+    }
+
+    .about-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .class-image {
+      display: block;
+      border-radius: 10px;
+      width: 450px;
+      
+    }
+    
 }
 
 @media (min-width: 1068px) {
@@ -363,5 +469,11 @@ header::before {
   .menu-cards {
     grid-template-columns: auto auto auto;
   }
+
+  .lesson-type-header,
+.lesson-type-content {
+  margin: 1em 0 1em 0;
+}
+
 }
 

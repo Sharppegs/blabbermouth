@@ -12,7 +12,8 @@ const cardsDisplay = cards.map(item =>
 ).join(' ')
 
 menuCards.innerHTML += cardsDisplay
-    
+
+
 
 
 console.log(cards)
