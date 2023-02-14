@@ -3,12 +3,10 @@ import {cards} from './cardData.js'
 const menuCards = document.getElementById("menu-cards")
 
 const cardsDisplay = cards.map(item => 
-        `<div class="card-info">
-           
-            <img src=${item.image} alt=${item.id} />
-            <h5 class="item-title">${item.title}</h5>
-            
-        </div>`
+        `<a href=${item.link} class="lesson-type-link aos-item"" data-aos="zoom-in"><div class="card-info"  >
+            <h1 class="item-title">${item.title}</h1>
+        <div class="lesson-types-button">Read More ></div>
+        </div></a>`
 ).join(' ')
 
 menuCards.innerHTML += cardsDisplay
