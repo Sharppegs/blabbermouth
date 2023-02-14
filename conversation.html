@@ -102,10 +102,45 @@
   
       </section>
 
-      <section>
-        <div class="lesson-title">
-            <h1>When?</h1>
-          </div>
+      <section class="lesson-type-secondary">
+        
+            <h2>Conversation class information</h2>
+
+            <div class="lesson-type-secondary-content">
+
+              <p>MAXIMUM NO. 6</p>
+              <p>PRICE: £10 per class</p>
+              <p>WHERE: ZOOM</p>
+
+            </div>
+            <h2>Get in Touch</h2>
+            <div class="container">
+             
+            <form action="send-email.php" method="post">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+            
+                <label for="email">Email Contact</label>
+                <input type="email" id="email" name="email" placeholder="Your email address.." required>
+            
+                <label for="time">Which Class Would you Prefer?</label>
+                <select id="time" name="time">
+                  <option value="tuesdayAM">Tuesday 11:00 - 12:00</option>
+                  <option value="tuesdayPM">Tuesday 16:00 - 17:00</option>
+                  <option value="wednesdayAM">Wednesday 10:00 - 11:00</option>
+                  <option value="thursdayPM">Thursday 17:00 - 18:00</option>
+                </select>
+            
+                <label for="message">Anything to ask us?</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <button>Send</button>
+            
+              </form>
+
+            </div>
+          
       </section>
   
 
