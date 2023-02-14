@@ -63,7 +63,7 @@
                   <div class="col-md centre-image">
                       <img src="./img/convo-placeholder.png" 
                               alt="converaation classes" 
-                              class="class-image img-fluid aos-item" data-aos="zoom-in"
+                              class="class-image img-fluid" 
                       />
                   </div>
   
@@ -116,7 +116,7 @@
             <h2>Get in Touch</h2>
             <div class="container">
              
-            <form action="send-email.php" method="post">
+              <form action="https://formsubmit.co/devphilbolton@gmail.com" method="POST">
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name.." required>
@@ -126,16 +126,16 @@
             
                 <label for="time">Which Class Would you Prefer?</label>
                 <select id="time" name="time">
-                  <option value="tuesdayAM">Tuesday 11:00 - 12:00</option>
-                  <option value="tuesdayPM">Tuesday 16:00 - 17:00</option>
-                  <option value="wednesdayAM">Wednesday 10:00 - 11:00</option>
-                  <option value="thursdayPM">Thursday 17:00 - 18:00</option>
+                  <option value="tuesday-11:00">Tuesday 11:00 - 12:00</option>
+                  <option value="tuesday-16:00">Tuesday 16:00 - 17:00</option>
+                  <option value="wednesday-10:00">Wednesday 10:00 - 11:00</option>
+                  <option value="thursday-17:00">Thursday 17:00 - 18:00</option>
                 </select>
             
                 <label for="message">Anything to ask us?</label>
                 <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-            
-                <button>Send</button>
+                <input type="submit" value="Send">
+                
             
               </form>
 

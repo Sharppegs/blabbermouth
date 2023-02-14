@@ -399,6 +399,8 @@ header::before,
   border-radius: 10px;
   width: 200px;
   margin-bottom: 1em;
+  animation: zoomIn;
+  animation-duration: 1s;
 }
 
 /* page form */
