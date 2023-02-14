@@ -330,19 +330,29 @@ header::before,
 
 .lesson-types {
   color: black;
-  background: #f7ebde;
+  background: #f5f5f5;
   margin: 0;
   padding-top: 1em;
 }
 
+.lesson-type-secondary {
+  background: var(--clr-light-blue);
+}
+
 .lesson-title,
 .item-title {
-  text-align: center;
   font-family: 'Permanent Marker', cursive;
+  
+}
+
+.lesson-title {
+  padding: 1em 2em;
+  text-align: left;
   color: black;
 }
 
 .item-title {
+  text-align: center;
   font-size: 2rem;
   color: white;
 }
@@ -389,6 +399,34 @@ header::before,
   border-radius: 10px;
   width: 200px;
   margin-bottom: 1em;
+}
+
+/* page form */
+
+input, select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 /* footer */
