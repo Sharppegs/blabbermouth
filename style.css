@@ -393,7 +393,7 @@ header::before,
   /* conversation page */
 
 .conversation {
-  
+  background: #fdfdfd;
   color: #08104f; 
   border-radius: 15px;
   font-family: 'Roboto', sans-serif;
