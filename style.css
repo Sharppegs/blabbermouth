@@ -330,9 +330,10 @@ header::before,
 /* Lesson types section */
 
 .lesson-type-backdrop {
-  background: #121212;
-  background-image: url(./img/backdrop.jpg);
+  background: #f9f1e9;
+  background-image: url(./img/blabber.jpg);
   background-blend-mode: overlay;
+  
 }
 
 .lesson-types {
@@ -343,6 +344,9 @@ header::before,
 
 .lesson-type-secondary {
   padding-top: 1em;
+  background: #121212;
+  background-image: url(./img/backdrop.jpg);
+  background-blend-mode: overlay;
 }
 
 .lesson-title,
@@ -353,7 +357,6 @@ header::before,
 }
 
 .lesson-title {
-  padding: 1em 2em;
   text-align: center;
   color: var(--clr-pop-red);
 }
@@ -372,7 +375,6 @@ header::before,
 
 .lesson-type-title {
   text-align: center;
-  
 }
 
 .lesson-type-link {
@@ -391,18 +393,18 @@ header::before,
   /* conversation page */
 
 .conversation {
-  background: var(--clr-pop-red);
-  color: #f5f5f5;
+  
+  color: #08104f; 
+  border-radius: 15px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1em;
-  animation: moveInUp;
-  animation-duration: 1s;
-  margin: 0 auto;
+  
+  margin: 0 auto 2em auto;
   width: 90%;
   align-self: center;
+ 
   
 }
 
@@ -410,10 +412,10 @@ header::before,
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 2;
 }
 
 .class-image {
- 
   border-radius: 10px;
   width: 200px;
   margin-bottom: 1em;
@@ -422,10 +424,12 @@ header::before,
 }
 
 .lesson-info-title {
+  font-family: 'Permanent Marker', cursive;
   color:var(--clr-pop-red);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1.5em;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .lesson-type-secondary-content {
@@ -436,32 +440,53 @@ header::before,
   gap: 1.5em;
 }
 
+.class-information {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+}
 
 .lesson-info-circle {
-  min-width: 200px;
+  min-width: 250px;
   height: 100px;
   border-radius: 10px;
-  background-color: var(--clr-pop-yellow);
+  background-color: var(--clr-pop-red);
+  color: #f5f5f5;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
 }
 
+.class-info-logo img {
+  display: none;
+}
+
 /* page form */
+
+form {
+  font-family: 'Roboto', sans-serif;
+}
 
 .form-header {
   text-align: center;
+  margin-bottom: 1em;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .form-container {
   background: var(--clr-light-blue);
-  padding: 1em 2em;
-  width: 90%;
+  padding: 1em;
+  width: 80%;
   align-self: center;
-  margin: 0 auto;
+  margin: 0 auto 2em auto;
   border-radius: 10px;
   box-shadow: 0.5em 0.5em 1em -0.5em rgba(0, 55, 179, 0.8);;
 }
@@ -679,28 +704,45 @@ input[type=submit]:hover {
     .class-image {
       display: block;
       border-radius: 10px;
-      width: 450px;
+      width: 400px;
       
     }
 
-    /* .lesson-title {
-      text-align: left;
-      } */
+    .lesson-title {
+      padding: 1em 2em;
+      
+    }
+
+      .centre-image {
+         order: 0;
+      }
 
     .conversation {
-      font-family: 'Roboto', sans-serif;   
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1em 2em;
-      border-radius: 10px;
-      box-shadow: 0.5em 0.5em 1em -0.5em rgb(254, 8, 121, 0.8);
-      
-      
+      background: #fdfdfd;
+      padding: 1em 2em; 
+      box-shadow: 0.5em 0.5em 1.5em -1em;   
+    }
+
+    .lesson-info-title {
+      margin-top: 1em;
     }
 
     .lesson-info-circle {
       width: 400px;
+    }
+
+    .class-info-logo img {
+      display: block;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      text-align: center;
+    }
+
+    .form-container {
+      background: var(--clr-light-blue);
+      padding: 1em 2em;
     }
 
 
@@ -728,7 +770,7 @@ input[type=submit]:hover {
 
   .lesson-type-header,
 .lesson-type-content {
-  margin: 1em 0 1em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 }

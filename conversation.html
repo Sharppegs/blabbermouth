@@ -60,7 +60,7 @@
             </div>
 
             <div class="container">
-              <div class="row justify-content-between py-4">
+              <div class="row justify-content-between pt-2 pb-4">
                   <div class="col-md centre-image">
                       <img src="./img/convo-placeholder.png" 
                               alt="converaation classes" 
@@ -106,29 +106,36 @@
       
 
       <section class="lesson-type-secondary">
-        <div class="container">
-        <div class="row justify-content-between py-4"> 
+        <div class="container px-0">
+        <div class="row justify-content-between"> 
 
-            <div class="col-md">
+            <div class="col-md class-information">
               <h2 class="lesson-info-title">Class Information</h2>
 
               <div class="lesson-type-secondary-content">
                 <div class="lesson-info-circle">
-                  <p>MAXIMUM NO. 6</p>
+                  <p>MAXIMUM NUMBER:</p>
+                  <p>6 people</p>
                 </div>
                 <div class="lesson-info-circle">
-                  <p>PRICE: £10 per class</p>
+                  <p>PRICE:</p> 
+                    <p>£10 per class</p>
                 </div>
                 <div class="lesson-info-circle">
-                  <p>WHERE: ZOOM</p>
+                  <p>WHERE:</p> 
+                    <p>Zoom</p>
                 </div>
+              </div>
+
+              <div class="class-info-logo">
+                <img src="./img/placeholder-logo.jpg" alt="placeholder-logo">
               </div>
 
             </div>
             
             
               <div class="form-container col-md">
-                <h2 class="form-header">Got any questions? Get in touch!</h2>
+                <h2 class="form-header">Need more details? Get in touch!</h2>
                 <form action="https://formsubmit.co/devphilbolton@gmail.com" method="POST">
 
                   <label for="name">Name</label>
@@ -137,7 +144,7 @@
                   <label for="email">Email Contact</label>
                   <input type="email" id="email" name="email" placeholder="Your email address.." required>
               
-                  <label for="time">Which Class Would you Prefer?</label>
+                  <label for="time">Which class would you prefer?</label>
                   <select id="time" name="time">
                     <option value="tuesday-11:00">Tuesday 11:00 - 12:00</option>
                     <option value="tuesday-16:00">Tuesday 16:00 - 17:00</option>
@@ -161,9 +168,37 @@
     </div>
         </main>
 
-        <footer>
-          
-        </footer>
+         <!-- Footer -->
+         <footer class="footer" id="contact">
+          <a href="mailto:devphilbolton@gmail.com" class="footer__link" target="_blank">blabbermouthUK@gmail.com</a>
+          <ul class="social-list">
+              <li class="social-list__item">
+                  <a class="social-list__link" href="#" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="#" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="#" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="#" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+              </li>
+          </ul>
+
+        <!-- <div class="credits">
+          <p><a href="https://www.freepik.com/free-photo/portrait-young-business-woman-video-call-from-home_14439699.htm#query=zoom&position=1&from_view=search&track=sph">Image by mego-studio</a> on Freepik</p>
+          <p><a href="https://www.freepik.com/free-vector/online-tutorials-concept_7915212.htm#query=online%20classes&position=5&from_view=search&track=sph">Image by pikisuperstar</a> on Freepik</p>
+        </div> -->
+      </footer>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./dist/aos.js"></script>
