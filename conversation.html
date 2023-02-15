@@ -53,6 +53,7 @@
       </nav>
       
       <main>
+        <div class="lesson-type-backdrop">
         <section class="lesson-types">
             <div class="lesson-title">
               <h1>Conversation Classes</h1>
@@ -102,49 +103,62 @@
   
       </section>
 
+      
+
       <section class="lesson-type-secondary">
-        
-            <h2>Conversation class information</h2>
+        <div class="container">
+        <div class="row justify-content-between py-4"> 
 
-            <div class="lesson-type-secondary-content">
+            <div class="col-md">
+              <h2 class="lesson-info-title">Class Information</h2>
 
-              <p>MAXIMUM NO. 6</p>
-              <p>PRICE: £10 per class</p>
-              <p>WHERE: ZOOM</p>
-
-            </div>
-            <h2>Get in Touch</h2>
-            <div class="container">
-             
-              <form action="https://formsubmit.co/devphilbolton@gmail.com" method="POST">
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name.." required>
-            
-                <label for="email">Email Contact</label>
-                <input type="email" id="email" name="email" placeholder="Your email address.." required>
-            
-                <label for="time">Which Class Would you Prefer?</label>
-                <select id="time" name="time">
-                  <option value="tuesday-11:00">Tuesday 11:00 - 12:00</option>
-                  <option value="tuesday-16:00">Tuesday 16:00 - 17:00</option>
-                  <option value="wednesday-10:00">Wednesday 10:00 - 11:00</option>
-                  <option value="thursday-17:00">Thursday 17:00 - 18:00</option>
-                </select>
-            
-                <label for="message">Anything to ask us?</label>
-                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                <input type="submit" value="Send">
-                
-            
-              </form>
+              <div class="lesson-type-secondary-content">
+                <div class="lesson-info-circle">
+                  <p>MAXIMUM NO. 6</p>
+                </div>
+                <div class="lesson-info-circle">
+                  <p>PRICE: £10 per class</p>
+                </div>
+                <div class="lesson-info-circle">
+                  <p>WHERE: ZOOM</p>
+                </div>
+              </div>
 
             </div>
-          
+            
+            
+              <div class="form-container col-md">
+                <h2 class="form-header">Got any questions? Get in touch!</h2>
+                <form action="https://formsubmit.co/devphilbolton@gmail.com" method="POST">
+
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name.." required>
+              
+                  <label for="email">Email Contact</label>
+                  <input type="email" id="email" name="email" placeholder="Your email address.." required>
+              
+                  <label for="time">Which Class Would you Prefer?</label>
+                  <select id="time" name="time">
+                    <option value="tuesday-11:00">Tuesday 11:00 - 12:00</option>
+                    <option value="tuesday-16:00">Tuesday 16:00 - 17:00</option>
+                    <option value="wednesday-10:00">Wednesday 10:00 - 11:00</option>
+                    <option value="thursday-17:00">Thursday 17:00 - 18:00</option>
+                  </select>
+              
+                  <label for="message">Anything to ask us?</label>
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                  <input type="submit" value="Send">
+                  
+              
+                </form>
+              </div>
+            
+          </div>
+        </div>
       </section>
   
 
-        
+    </div>
         </main>
 
         <footer>
