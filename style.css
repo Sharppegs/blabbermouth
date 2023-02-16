@@ -149,13 +149,13 @@ header::before,
   gap: 1em;
 }
 
-.spin {
+/* .spin {
   perspective: 500px;	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-}
+} */
 
 .img-logo {
   max-width: 250px;
