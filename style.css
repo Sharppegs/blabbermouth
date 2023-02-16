@@ -41,9 +41,9 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-    margin: 0;
     background: #f7ebde;
-    color: #08104f;    
+    color: #08104f;
+        
 }
 
 
@@ -348,7 +348,6 @@ header::before,
 }
 
 .lesson-types {
- 
   margin: 0;
   padding-top: 1em;
 }
@@ -358,6 +357,7 @@ header::before,
   background: #121212;
   background-image: url(./img/backdrop.jpg);
   background-blend-mode: overlay;
+  
 }
 
 .lesson-title,
@@ -480,6 +480,18 @@ header::before,
   display: none;
 }
 
+/* private tutoring page */
+
+.blue {
+  color: var(--clr-pop-blue);
+}
+
+.blue-bg {
+  background: var(--clr-pop-blue);
+  color: #f5f5f5;
+}
+
+
 /* page form */
 
 form {
@@ -499,7 +511,7 @@ form {
   align-self: center;
   margin: 0 auto 2em auto;
   border-radius: 10px;
-  box-shadow: 0.5em 0.5em 1em -0.5em rgba(0, 55, 179, 0.8);;
+  box-shadow: 0.5em 0.5em 1em -0.5em rgba(0, 55, 179, 0.8);
 }
 
 input, select, textarea {
@@ -526,6 +538,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.yellow {
+  background: var(--clr-pop-yellow);
+  
 }
 
 /* footer */
@@ -758,7 +775,7 @@ input[type=submit]:hover {
     }
 
     .form-container {
-      background: var(--clr-light-blue);
+      
       padding: 1em 2em;
     }
 
@@ -789,6 +806,18 @@ input[type=submit]:hover {
 .lesson-type-content {
   margin: 1em 0 0.5em 0;
 }
+
+}
+
+@media(max-width: 350px) {
+
+  .footer__link {
+    font-size: 1rem;
+    }
+
+  .lesson-info-title {
+      font-size: 2rem;
+    }
 
 }
 

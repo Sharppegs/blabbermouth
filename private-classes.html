@@ -34,8 +34,9 @@
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="private-classes.html" class="nav-link">Private Tutoring</a>
+                        <a href="conversation.html" class="nav-link">Conversation Classes</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
                     </li>
@@ -53,14 +54,14 @@
         
         <section class="lesson-types">
           <div class="lesson-type-backdrop">
-            <div class="lesson-title">
-              <h1>Conversation Classes</h1>
+            <div class="lesson-title blue">
+              <h1>Private Tutoring</h1>
             </div>
 
             <div class="container">
               <div class="row justify-content-between pt-2 pb-4">
                   <div class="col-md centre-image">
-                      <img src="./img/convo-placeholder.png" 
+                      <img src="./img/private.svg" 
                               alt="converaation classes" 
                               class="class-image img-fluid" 
                       />
@@ -69,12 +70,12 @@
                   <div class="conversation col-md">
                      
                     <div>
-                        <h4 class="lesson-type-header">Join our fun online conversation classes and see a HUGE improvement to your English!</h4>
-                        <p class="lesson-type-content">Whether you want to achieve fantastic results in your FCE, CAE or IELTS speaking tests, or simply perfect
-                          your skills and speak English like a native, we have the classes for you!
+                        <h4 class="lesson-type-header">Still need that extra boost to improve your English skills?</h4>
+                        <p class="lesson-type-content">Look no further than our one-to-one
+                          sessions. Each class is unique and tailored to your specific goals and progress.
                         </p>
                     </div>
-                      <div>
+                      <!-- <div>
                         <h4 class="lesson-type-header">What will you learn from our sessions?</h4>
                         <p class="lesson-type-content">Each class will be based on a different theme, from simple,
                           every day chat to more tricky topics so you can handle any conversation.
@@ -88,7 +89,7 @@
                             <li>Personalised feedback.</li>
                             <li>Extra worksheets</li>
                         </ul>
-                      </div>
+                      </div> -->
 
                      
                       <a href="#" class="btn btn-info mt-3">
@@ -98,7 +99,7 @@
 
               </div>
           </div>
-          </div>
+        </div>
       </section>
 
       
@@ -111,13 +112,13 @@
               <h2 class="lesson-info-title">Class Information</h2>
 
               <div class="lesson-type-secondary-content">
-                <div class="lesson-info-circle">
-                  <p>MAXIMUM NUMBER:</p>
-                  <p>6 people</p>
+               <div class="lesson-info-circle">
+                  <p>GENERAL ENGLISH</p> 
+                    <p>£25 per hour</p>
                 </div>
-                <div class="lesson-info-circle">
-                  <p>PRICE:</p> 
-                    <p>£10 per class</p>
+               <div class="lesson-info-circle">
+                  <p>EXAM FOCUS</p> 
+                    <p>£35 per hour</p>
                 </div>
                 <div class="lesson-info-circle">
                   <p>WHERE:</p> 
@@ -132,7 +133,7 @@
             </div>
             
             
-              <div class="form-container col-md">
+              <div class="form-container yellow col-md">
                 <h2 class="form-header">Need more details? Get in touch!</h2>
                 <form action="https://formsubmit.co/info@blabbermouthlanguages.co.uk" method="POST">
 
@@ -142,16 +143,14 @@
                   <label for="email">Email Contact</label>
                   <input type="email" id="email" name="email" placeholder="Your email address.." required>
               
-                  <label for="time">Which class are you interested in?</label>
-                  <select id="time" name="time">
-                    <option value="tuesday-11:00">Tuesday 11:00 - 12:00</option>
-                    <option value="tuesday-16:00">Tuesday 16:00 - 17:00</option>
-                    <option value="wednesday-10:00">Wednesday 10:00 - 11:00</option>
-                    <option value="thursday-17:00">Thursday 17:00 - 18:00</option>
+                  <label for="which-class">Which classes are you interested in?</label>
+                  <select id="which-class" name="which-class">
+                    <option value="private-general-class">General English</option>
+                    <option value="private-exam-class">Exam Preparation</option>
                     <option value="thursday-17:00">I'm not sure yet</option>
                   </select>
               
-                  <label for="message">Anything to ask us?</label>
+                  <label for="message">How can we help you?</label>
                   <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
                   <input type="submit" value="Send">
                   
