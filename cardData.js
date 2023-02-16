@@ -11,11 +11,11 @@ const cards = [
         title: "Private Classes",
         image: "./img/example-3.jpg",
         text: "jdsakdfkdfkfdkfdkjlfdjkfdskj",
-        link: "#"
+        link: "private-classes.html"
     },
     {
         id: 2,
-        title: "Exam Preparation",
+        title: "Eight-Week Courses",
         image: "./img/example-2.jpg",
         text: "jdsakdfkdfkfdkfdkjlfdjkfdskj",
         link: "#"
