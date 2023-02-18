@@ -92,7 +92,15 @@ header::before,
 .lesson-types::before {
     display: block;
     content: '';
-    height: 60px;
+    height: 50px;
+}
+
+#about::before,
+#classes::before {
+  display: block;
+    content: '';
+    height: 25px;
+
 }
 
 
@@ -298,7 +306,7 @@ header::before,
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  margin-top: 1.5em;
+  margin: 1.5em auto 0 auto;
 }
 
 .card-info {
@@ -350,6 +358,13 @@ header::before,
 
 /* Lesson types section */
 
+.class-container {
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+
 .lesson-type-backdrop {
   background: #f9f1e9;
   background-image: url(./img/blabber.jpg);
@@ -400,11 +415,13 @@ header::before,
 
 .lesson-type-link {
   text-decoration: none;
+  
 }
 
 .lesson-type-header,
 .lesson-type-content {
-  margin: 1em 0 1em 0;
+  margin-bottom: 1em;
+  
 }
 
 .lesson-secondary {
@@ -421,28 +438,37 @@ header::before,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   margin: 0 auto 2em auto;
   width: 90%;
   align-self: center;
- 
   
 }
 
 .centre-image {
+  
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   order: 2;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .class-image {
   border-radius: 10px;
   width: 300px;
+  max-height: 565px;
+  object-fit: cover;
   margin-bottom: 1em;
   animation: zoomIn;
   animation-duration: 1s;
   box-shadow: -0.5em 0.5em 1.5em -1em;
+}
+
+.tutor-image {
+  max-height: 425px;
 }
 
 .lesson-info-title {
@@ -451,7 +477,7 @@ header::before,
   font-weight: bold;
   text-align: center;
   font-size: 3rem;
-  margin: 0;
+  margin-top: 0;
 }
 
 .lesson-type-secondary-content {
@@ -503,6 +529,8 @@ header::before,
 }
 
 
+
+
 /* page form */
 
 form {
@@ -518,7 +546,7 @@ form {
 .form-container {
   background: var(--clr-light-blue);
   padding: 1em;
-  width: 80%;
+  width: 90%;
   align-self: center;
   margin: 0 auto 2em auto;
   border-radius: 10px;
@@ -653,7 +681,7 @@ input[type=submit]:hover {
   
   .nav-item {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-right: 2em;
     color: #08104f; 
   }
@@ -712,13 +740,14 @@ input[type=submit]:hover {
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     margin: 0 auto;
     /* width: 90%; */
-    padding: 2em 3em;
+    padding: 1em 2.5em;
     align-items: center;
   }
 
   .card-info {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+    margin-left: 0.5em;
   }
   
   .item-image {
@@ -747,10 +776,12 @@ input[type=submit]:hover {
       object-fit: cover;
       border-radius: 50%;
     }
+
+
     .class-image {
       display: block;
       border-radius: 10px;
-      width: 500px;
+      width: 100%;
       object-fit: cover;
         
     }
@@ -759,14 +790,14 @@ input[type=submit]:hover {
       padding: 1em 2em;
       
     }
-
       .centre-image {
          order: 0;
+         
       }
 
     .conversation {
       background: #fdfdfd;
-      padding: 1em 2em; 
+      padding: 0 2em 1em 2em; 
       box-shadow: 0.5em 0.5em 1.5em -1em;   
     }
 
@@ -780,8 +811,8 @@ input[type=submit]:hover {
 
     .class-info-logo img {
       display: block;
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
       text-align: center;
@@ -811,9 +842,7 @@ input[type=submit]:hover {
     right: 30px;
   }
 
-  .menu-cards {
-    grid-template-columns: auto auto auto;
-  }
+ 
 
   .lesson-type-header,
 .lesson-type-content {
