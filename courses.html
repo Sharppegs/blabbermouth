@@ -53,22 +53,22 @@
       </nav>
       
       <main>
-        
+        <div class="lesson-type-backdrop">
         <section class="lesson-types">
-          <div class="lesson-type-backdrop">
-            <div class="lesson-title">
+          
+            <div class="lesson-title blue">
               <h1>Eight-Week Courses</h1>
             </div>
 
             <div class="class-container">
               <div class="row justify-content-between pt-2 pb-4">
-                <div class="col-md centre-image">
-                  <img src="./img/conversation.svg" 
-                          alt="converaation classes" 
-                          class="class-image img-fluid" 
-                  />
-              </div>
-                <div class="conversation col-md">
+                <div class="col-md centre-image h-100">
+                    <img src="./img/course.jpg" 
+                            alt="converaation classes" 
+                            class="class-image img-fluid" 
+                    />
+                </div>
+                <div class="conversation col-md h-100">
                      
                   <div>
                       <h4 class="lesson-type-header">Our courses are specially designed to help you improve on all aspects of your English. 
@@ -83,8 +83,8 @@
                       <p class="lesson-type-content">This includes class notes and extra resources.</p>
                     </div>
                                          
-                    <a href="#" class="btn btn-info mt-3">
-                        <i class="bi bi-chevron-right">Book Now</i>
+                    <a href="#secondary" class="btn btn-info mt-3 mb-3">
+                        <i class="bi bi-chevron-right">Find out more ></i>
                     </a>
                 </div>
 
@@ -94,15 +94,20 @@
                   
 
               </div>
-          </div>
+          
           
       </section>
+    </div>
 
       <section>
         <div class="p-3">
           <div class="lesson-title pb-3">
             <h1>Course Details</h1>
           </div>
+
+          <div class="course-cards" id="course-cards"></div>
+
+          <div class="table-lg">
           <table class="table table-striped">
             <thead>
               <tr class="table-dark">
@@ -141,11 +146,12 @@
             </tbody>
           </table>
         </div>
+        </div>
       </section>
 
       
 
-      <section class="lesson-type-secondary">
+      <section class="lesson-type-secondary" id="secondary">
         <div class="class-container">
         <div class="row justify-content-between"> 
 
@@ -154,16 +160,16 @@
 
               <div class="lesson-type-secondary-content">
                 <div class="lesson-info-circle">
-                  <p>MAXIMUM NUMBER:</p>
-                  <p>8 students per class</p>
+                  <h5 class="fw-bold">MAXIMUM NUMBER:</h5>
+                  <p class="lead">8 students per class</p>
                 </div>
                 <div class="lesson-info-circle">
-                  <p>PRICE:</p> 
-                    <p>£320 (32 hours)</p>
+                  <h5 class="fw-bold">PRICE:</h5> 
+                    <p class="lead">£320</p>
                 </div>
                 <div class="lesson-info-circle">
-                  <p>WHERE:</p> 
-                    <p>Zoom</p>
+                  <h5 class="fw-bold">WHERE:</h5> 
+                    <p class="lead">Zoom</p>
                 </div>
               </div>
 
@@ -175,7 +181,7 @@
             
             
               <div class="form-container col-md">
-                <h2 class="form-header">Need more details? Get in touch!</h2>
+                <h2 class="form-header">Need more details?<br>Get in touch!</h2>
                 <form action="https://formsubmit.co/info@blabbermouthlanguages.co.uk" method="POST">
 
                   <label for="name">Name</label>
@@ -247,6 +253,6 @@
       easing: 'ease-in-out-sine'
       });
   </script>
-    <script src="blabbermouth.js" type="module"></script>
+    <script src="courses.js" type="module"></script>
 </body>
 </html>
