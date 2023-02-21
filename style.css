@@ -775,7 +775,7 @@ input[type=submit]:hover {
 
 /* MEDIA QUERIES */
 
-@media(min-width: 768px) {
+@media(min-width: 868px) {
 
   .navbar {
     padding: 0.5em 2em;
