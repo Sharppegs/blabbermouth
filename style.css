@@ -494,6 +494,7 @@ iframe {
 
 .lesson-secondary {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
 }
 
 /* Meet the team */
@@ -931,9 +932,13 @@ input[type=submit]:hover {
       
     }
 
+    .lesson-secondary {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+    }
+
     .lesson-title {
       padding: 1em 2em;
-      
     }
       .centre-image {
          order: 0;
