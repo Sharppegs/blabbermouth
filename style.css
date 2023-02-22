@@ -463,7 +463,7 @@ iframe {
 
 .lesson-type-link {
   text-decoration: none;
-  margin-left: 1em;
+  
   
 }
 
@@ -891,6 +891,11 @@ input[type=submit]:hover {
       width: 100%;
       object-fit: cover;
         
+    }
+
+    .lesson-type-link {
+      margin-left: 1em;
+      
     }
 
     .lesson-title {
