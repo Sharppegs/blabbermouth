@@ -940,6 +940,16 @@ em {
   padding: .5em;
 }
 
+.insta-link {
+  color: var(--clr-pop-red);
+}
+
+.insta-link:hover,
+.insta-link:focus {
+  color: var(--clr-primary);
+
+}
+
 .credits {
   font-size: 0.6rem;
   align-self: start;
