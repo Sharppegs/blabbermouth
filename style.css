@@ -817,9 +817,21 @@ input[type=submit]:hover {
   max-height: 200px;
 }
 
+.article-title-text {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.article-title-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
 .article-page-image {
   margin: 0 auto;
   width: 90%;
+  text-align: center;
   /* height: 250px; */
   object-fit: cover;
   object-position: center;
@@ -841,7 +853,7 @@ input[type=submit]:hover {
 .individual-article-image {
   text-align: center;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -856,6 +868,10 @@ input[type=submit]:hover {
   text-align: left;
   box-shadow: 0.5em 0.5em 1.5em -1em rgba(0, 0, 0, 0.8);
   
+}
+
+.example-list {
+  list-style: none;
 }
 
 em {
@@ -1179,6 +1195,19 @@ em {
       padding: 3em 1em 1em 1em;
     }
 
+    /* .blog-card {
+      height: 400px;
+    } */
+
+    .blog-card-body {
+      justify-content: space-between;
+    }
+
+    .article-title-text {
+      
+      font-size: 3rem;
+    }
+
     .footer__link {
       font-size: 2rem;
     }
@@ -1197,11 +1226,22 @@ em {
     right: 30px;
   }
 
- 
+ .blogs {
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .blog-card {
+  min-height: 400px; 
+ }
 
   .lesson-type-header,
 .lesson-type-content {
   margin: 1em 0 0.5em 0;
+}
+
+.article-image-lg {
+  text-align: center;
+  justify-self: center;
 }
 
 }

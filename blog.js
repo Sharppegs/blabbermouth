@@ -24,3 +24,4 @@ const blogsDisplay = blogArticles.map(article =>
 ).join('')
 
 blogs.innerHTML += blogsDisplay
+
