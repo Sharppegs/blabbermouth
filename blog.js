@@ -3,7 +3,7 @@ import {blogArticles} from './blogData.js'
 
 const blogs = document.getElementById("blogs")
 
-const blogsDisplay = blogArticles.map(article => 
+const blogsDisplay = blogArticles.reverse().map(article => 
         `<a href=${article.link}>
             <div class="blog-card ${article.color}">
                 <div class="blog-card-body">
