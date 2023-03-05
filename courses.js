@@ -17,10 +17,7 @@ const courseDisplay = courses.map(course =>
                 <h5 class="fw-bold">When<h5>
                 <p>${course.times}</p>
             </div>
-            <div>
-                <h5 class="fw-bold">Begins</h5>
-                <p>${course.start}</p>
-            </div>
+            
             
         </div>`
 ).join(' ')
